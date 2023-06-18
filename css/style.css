@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+  padding-top: 25px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+.proHeader {
+  position: absolute;
+  top: -12%;
+  z-index: 5;
+  transition: 1s;
+}
+
+.proHeader:hover {
+  top: 0;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mainCont {
+  background: rgba(0, 255, 242, 0.61) !important;
+  border-radius: 16px !important;
+  backdrop-filter: blur(8.4px) !important;
+  -webkit-backdrop-filter: blur(8.4px) !important;
+  border: 1px solid rgba(69, 0, 255, 1) !important;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+}
+
+.card {
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+  border-radius: 30px !important;
+}
+
+
+.card:hover {
+  transform: scale(1.03)
+}
+
+
+.header1 {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+  border-radius: 30px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5.6px) !important;
+  -webkit-backdrop-filter: blur(5.6px) !important;
+  border: 2px solid #fff !important;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%) !important;
+
+}
+
+.neonText {
+  color: #fff !important;
+  text-shadow:
+    0 0 7px #000,
+    0 0 10px #000,
+    0 0 21px red,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa !important;
+}
+
+.neonBlack {
+  color: #fff !important;
+  text-shadow:
+    0 0 7px #000,
+    0 0 10px #000,
+    0 0 21px #000,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa !important;
+}
+
+.nav-link, .topBtn {
+  transition: 0.7s;
+  border-radius: 10px;
+}
+
+.nav-link:hover, .topBtn:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(to bottom right, #FF512F, #DD2476);
+}
+
+.active {
+  background-image: linear-gradient(to bottom right, #FF512F, #DD2476);
+}
+
+
+.problemTitles {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  padding-right: 30%;
+  border: 2px solid white;
+  color: #fff;
+  margin: 5px;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s;
+  background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.problemTitles:hover {
+  transform: scale(1.01);
+  background: linear-gradient(to right, #4d4d4d 0%, rgb(17, 17, 17) 100%);
+}
+
+.easy {
+  color: rgb(0, 255, 0);
+}
+
+.middle {
+  color: rgb(255, 255, 0);
+}
+
+.hard {
+  color: red;
+}
+
+.left, .right {
+  background: #222;
+  border-radius: 5px;
+  height: 100vh;
+  border: 5px solid #111;
+}
+
+code {
+  display: block;
+  background: #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.description {
+  overflow: auto;
+  background: #222;
+  height: 99%;
+  padding: 5px;
+}
+
+#codeEditor {
+  height: 70vh;
+  background: #222;
+  color: #fff;
+}
+
+.codeRunner {
+  position: relative;
+  padding: 3px;
+  height: 23vh;
+  border-top: 5px solid #111;
+}
+
+
+.submit {
+  background-color: green;
+}
+
+.run {
+  background-color: rgb(58, 58, 58);
+}
+
+.run, .submit {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  transition: 1s;
+}
+
+.run:hover, .submit:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+#lineCounter {
+  display: flex;
+  border-color: transparent;
+  overflow-y: hidden;
+  text-align: right;
+  box-shadow: none;
+  position: absolute;
+  width: 3rem;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1;
+  height: 70vh;
+  background: #222;
+  color: #999;
+}
+
+#lineCounter:focus-visible,
+#codeEditor:focus-visible,
+.codeRunner:focus-visible {
+  outline: none;
+}
+
+#lineCounter,
+#codeEditor {
+  resize: none;
+}
+
+#codeEditor {
+  padding-left: calc(3rem + 5px);
+  width: 60%;
+  border-radius: 20px;
+  border: none;
+}
+
+.ex {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.extit {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#difficulty {
+  background: green;
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+#descriptTxt {
+  font-style: italic;
+}
+
+#drag {
+  position: absolute;
+  left: -4px;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  cursor: w-resize;
+}
+
+#left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 100px;
+}
+
+#right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+}
+
+#barcha {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+}
+
+.codeRunner {
+  overflow: auto;
+}
